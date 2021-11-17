@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="bg"></header>
+        <div id="reservation">
+            <div class="common-fr step-03 quarter-fr">
+                <div class="step-tit">
+                    <p>(2/3)</p>
+                    <h1>RESERVATION</h1>
+                </div>
+                <!-- end step-tit -->
+                <div class="final-conf">
+                    <table>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="60%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>예약자</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>결제 방식</th>
+                                <td>4명이 나눠 결제</td>
+                            </tr>
+                            <tr>
+                                <th>1인 결제 금액</th>
+                                <td style="color: #f07800;">150,000 원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end final-conf -->
+                <div class="pay-info">
+                    <h2>동반자 정보 입력</h2>
+                    <p>* 예약자 외 결제자의 정보를 입력해주세요.</p>
+                    <p style="color: #e74c3c;">* 모든 참여자의 결제가 완료되어야 예약이 확정됩니다.</p>
+                </div>
+                <!-- end pay-info -->
+                <div class="companion-inp">
+                    <div class="inp-box">
+                        <input type="text" name="" id="qterNm01" class="cmpName" placeholder="이름">
+                        <input type="number" id="qterTel01" class="cmpTel" maxlength="11" placeholder="휴대폰 *(-) 없이 입력" oninput="maxLengthCheck(this)">
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                    <!-- end inp-box -->
+                    <div class="inp-box">
+                        <input type="text" name="" id="qterNm02" class="cmpName" placeholder="이름">
+                        <input type="number" id="qterTel02" class="cmpTel" maxlength="11" placeholder="휴대폰 *(-) 없이 입력" oninput="maxLengthCheck(this)">
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                    <!-- end inp-box -->
+                    <div class="inp-box">
+                        <input type="text" name="" id="qterNm03" class="cmpName" placeholder="이름">
+                        <input type="number" id="qterTel03" class="cmpTel" maxlength="11" placeholder="휴대폰 *(-) 없이 입력" oninput="maxLengthCheck(this)">
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                    <!-- end inp-box -->
+                </div>
+                <!-- end companion-inp -->
+                <div class="btn-area">
+                    <input class="send-btn" type="button" value="결제 요청 문자 보내기">
+                </div>
+                <!-- end btn-group -->
+            </div>
+            <!-- end step-03 -->
+            <div class="popBg warning">
+                <div class="popup">
+                    <div class="popContent">
+                        <img src="img/warning_icon.png" alt="">
+                        <h1>결제가 요청되었습니다.<br>남은 결제를 완료해주세요.</h1>
+                        <p>결제 마감 기한까지 동반자와 함께 <br> 전액 결제 완료되지 않으면 예약이 취소됩니다.</p>
+                        <div class="count-period">
+                            <p>결제 마감 기한</p>
+                            <p>예약자 : 00월 00일 00시 00분 까지</p>
+                            <p>동반자 : 00월 00일 00시 00분 까지</p>
+                        </div>
+                        <!-- end count-period -->
+                    </div>
+                    <!-- end popContent -->
+                    <div class="popFoot">
+                        <input type="button" value="결제하러 가기" onclick="location.href='reservation_payment.html'">
+                    </div>
+                    <!-- end popFoot-->
+                </div>
+                <!-- end popup -->
+            </div>
+            <!-- end popBg -->
+            <div class="popBg ph-book">
+                <div class="popup">
+                    <div class="popHead">
+                        <button class="hide-btn"><img src="img/hide_btn.png" alt=""></button>
+                    </div>
+                    <div class="popContent">
+                        <table>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="22%">
+                                <col width="28%">
+                                <col width="15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>일시</th>
+                                    <th>이름</th>
+                                    <th>전화번호</th>
+                                    <th>선택</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>21.08.21.</td>
+                                    <td>유문선</td>
+                                    <td>010-xxxx-1234</td>
+                                    <td><button class="add-btn"><i class="fas fa-user-plus"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>21.08.21.</td>
+                                    <td>유문선</td>
+                                    <td>010-xxxx-1234</td>
+                                    <td><button class="add-btn"><i class="fas fa-user-plus"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>21.08.21.</td>
+                                    <td>유문선</td>
+                                    <td>010-xxxx-1234</td>
+                                    <td><button class="add-btn"><i class="fas fa-user-plus"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>21.08.21.</td>
+                                    <td>유문선</td>
+                                    <td>010-xxxx-1234</td>
+                                    <td><button class="add-btn"><i class="fas fa-user-plus"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>21.08.21.</td>
+                                    <td>유문선</td>
+                                    <td>010-xxxx-1234</td>
+                                    <td><button class="add-btn"><i class="fas fa-user-plus"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end popContent -->
+                </div>
+                <!-- end popup -->
+            </div>
+            <!-- end popBg -->
+        </div>
+        <!-- end reservation -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

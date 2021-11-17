@@ -1,0 +1,61 @@
+<a class="booking-btn" href="reservation_main.html">
+    <i class="fas fa-calendar-alt"></i>
+    <p>예약하기</p>
+</a>
+<div class="foot-info">
+    <a class="f-logo" href="/">
+        <img src="img/f_logo.svg" alt="">
+        <img class="m-foot-logo" src="img/m_foot_logo.svg" alt="">
+    </a>
+    <div class="f-content">
+        <div class="foot-menu">
+            <a href="privacy_policy.html" style="color:#fff; font-weight: bold;">개인정보처리방침</a>
+            <a href="terms_of_use.html">이용약관</a>
+            <a href="information_processing.html">영상정보처리기운영</a>
+            <a href="customer_contact.html">문의하기</a>
+        </div>
+        <div class="site-related">
+            <p>(주) 블루원 천북지점 | 경상북도 경주시 보불로 391</p>
+            <ul>
+                <li>대표자명: 윤재연</li>
+                <li>사업자등록번호 : 666-85-01922</li>
+            </ul>
+            <ul>
+                <li>통신판매업신고: 제 2021-경북경주-0588호</li>
+                <li>대표번호 054-779-9500</li>
+            </ul>
+            <p>copyright &copy; 2021 blueone. all right reserved.</p>
+        </div>
+        <!-- end site-related -->
+    </div>
+    <!-- end f-content -->
+</div>
+<!-- end foot-info -->
+<script>
+    $(function() {
+        $("header").load("common/header.html", function() {
+
+            var href = window.location.href
+
+            if (href.includes("/about")) {
+                jQuery("header .gnb-menu a:eq(0)").addClass("on")
+            };
+            if (href.includes("/space") || href.includes("/space_clubhouse") || href.includes("/space_playx")) {
+                jQuery("header .gnb-menu a:eq(1)").addClass("on")
+            };
+            if (href.includes("/course")) {
+                jQuery("header .gnb-menu a:eq(2)").addClass("on")
+            };
+            if (href.includes("/guide_fee") || href.includes("/guide_reservation_info") || href.includes("/guide_use") || href.includes("/guide_rule")) {
+                jQuery("header .gnb-menu a:eq(3)").addClass("on")
+            };
+            if (href.includes("/board_event") || href.includes("/board_event_detail") || href.includes("/board_notice") || href.includes("/board_notice_detail") || href.includes("/board_news") || href.includes("/board_news_detail")) {
+                jQuery("header .gnb-menu a:eq(4)").addClass("on")
+            };
+            if (href.includes("/customer_contact") || href.includes("/customer_data")) {
+                jQuery("header .gnb-menu a:eq(5)").addClass("on")
+            };
+
+        });
+    });
+</script>

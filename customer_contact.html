@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        #customer .contact-fr .alert {
+            font-size: 14px;
+            color: red;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div id="customer" class="wrap-sub fill-sub">
+            <div class="container font-0">
+                <aside>
+                    <h1>CUSTOMER</h1>
+                    <ul class="menu-bar">
+                        <li class="on"><a href="customer_contact.html">문의하기</a></li>
+                        <li><a href="customer_data.html">자료실</a></li>
+                    </ul>
+                    <!-- end menu-bar -->
+                </aside>
+                <div class="content cm-sub question">
+                    <h1 class="pg-tit">문의하기</h1>
+                    <form class="contact-fr" action="index.html">
+                        <table>
+                            <colgroup>
+                                <col width="18%">
+                                <col width="82%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="type-data">
+                                    <th>문의유형<span class="essential">*</span></th>
+                                    <td>
+                                        <select id="contact-sel" name="contact-sel" onchange="contactSel();">
+                                            <option value="non-sel">선택</option>
+                                            <option value="op-01">예약/결제</option>
+                                            <option value="op-02">취소/변경</option>
+                                            <option value="op-03">단체/제휴</option>
+                                            <option value="op-04">불편/개선</option>
+                                            <option value="op-05">기타 문의</option>
+                                        </select>
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="tit-data">
+                                    <th>제목<span class="essential">*</span></th>
+                                    <td>
+                                        <input id="tit" type="text" placeholder="제목을 입력하세요.">
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="content-data">
+                                    <th>내용<span class="essential">*</span></th>
+                                    <td>
+                                        <textarea name="" id="content" placeholder="내용을 입력하세요."></textarea>
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="nm-data">
+                                    <th>고객명<span class="essential">*</span></th>
+                                    <td>
+                                        <input id="user-nm" type="text" placeholder="이름을 입력하세요.">
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="tel-data">
+                                    <th>휴대폰<span class="essential">*</span></th>
+                                    <td>
+                                        <input id="user-tel" type="text" placeholder="'-'없이 번호만 입력하세요.">
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="email-data">
+                                    <th>이메일<span class="essential">*</span></th>
+                                    <td>
+                                        <input id="user-email" type="text" placeholder="이메일 주소">
+                                        <p class="alert"></p>
+                                    </td>
+                                </tr>
+                                <tr class="attach">
+                                    <th>첨부파일(선택)</th>
+                                    <td>
+                                        <div class="file-box">
+                                            <input readonly class="file-name" type="text" value="선택된 파일이 없습니다.">
+                                            <input type="file" id="upload" style="display: none;"><label class="upload-btn" for="upload">파일선택</label>
+                                        </div>
+                                        <div class="add-info">
+                                            <p>*파일 확장자가 jpg, gif, pdf인파일 1개만 첨부 가능합니다.</p>
+                                            <p>파일 업로드 시 용량 사용량은 5MB를 넘을 수 없습니다.</p>
+                                        </div>
+                                        <!-- end add-info -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="consent">
+                            <div class="head">
+                                <div class="checkBox">
+                                    <input type="checkbox" name="agree" id="agree">
+                                    <label for="agree">(필수) 개인정보 수집 및 이용동의 </label>
+                                </div>
+                                <!-- end checkBox-->
+                                <button>자세히보기</button>
+                            </div>
+                            <!-- end head -->
+                            <ul>
+                                <li>‘문의하기’ 이용과 관련하여 귀사가 본인으로부터 취득한 하기 정보는, “정보통신망이용촉진및정보보호 등에 관한 법률” 및 “신용정보의 이용 및 보호에 관한 법률” 제 23조 및 제 24조의 규정에 따라 타인에게 제공, 활용 시 본인의 동의를 얻어야 하는 정보입니다. </li>
+                                <li>이에 본인은 귀사가 하기 정보를 ‘문의하기’ 서비스의 제공을 위하여 수집하고, 수집한 정보를 본인의 ‘문의하기’ 의견에 대한 사실관계 등을 확인하기 위하여 활용하거나, 고객의견에 대한 회신, 조치 및 처리 결과의 통보, 감사 말씀 전달 등에 활용하거나, 고객의 불만 및 칭찬 등에 대한 분석 및 통계자료로 활용하는 것에 동의합니다.</li>
+                                <li>또한, 본인이 제공한 개인정보는 귀사가 최대 1년간 보유할 수 있으며, 그 보유기간이 다하거나, 제공 및 활용 목적을 다한 때에는 즉시 폐기하는 것에 동의합니다. ※ 제공할 개인정보의 내용 1. 개인식별정보(성명,성별,나이,이메일주소,핸드폰번호 등)</li>
+                            </ul>
+                        </div>
+                        <!-- end consent -->
+                        <input type="button" value="등록하기" class="enroll-btn" onclick="sendContact();">
+                        <div class="contact-noti">
+                            <p>유의사항</p>
+                            <ul>
+                                <li>+ 접수된 내용은 담당자가 확인 후 고객님께서 기입하신 메일 주소로 답변해드리겠습니다.</li>
+                                <li>+ 보내주신 문의내용의 중요도에 따라 별도 유선답변을 드릴 수도 있습니다.</li>
+                                <li>+ 담당자의 답변 작성 시간이 소요되오니, 이용에 참고하여 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                        <!-- end contact-noti -->
+                    </form>
+                    <!--- end contact-fr -->
+                </div>
+                <!-- end content -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end customer -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function contactSel() {
+            var selectedEl = document.getElementById("contact-sel");
+            var optionVal = selectedEl.options[selectedEl.selectedIndex].value;
+            console.log(optionVal)
+            if (optionVal != "non-sel") {
+                $(".contact-fr .type-data .alert").text("");
+            }
+        }
+        $("#tit").keyup(function() {
+            var tit_val = $("#tit").val();
+            if (tit_val) {
+                $(".contact-fr .tit-data .alert").text("");
+            }
+        });
+        $("#content").keyup(function() {
+            var content_val = $("#content").val();
+            if (content_val) {
+                $(".contact-fr .content-data .alert").text("");
+            }
+        });
+        $("#user-nm").keyup(function() {
+            var user_nm_val = $("#user-nm").val();
+            if (user_nm_val) {
+                $(".contact-fr .nm-data .alert").text("");
+            }
+        });
+        $("#user-tel").keyup(function() {
+            var user_tel_val = $("#user-tel").val();
+            if (user_tel_val) {
+                $(".contact-fr .tel-data .alert").text("");
+            }
+        });
+        $("#user-email").keyup(function() {
+            var user_email_val = $("#user-email").val();
+            if (user_email_val) {
+                $(".contact-fr .email-data .alert").text("");
+            }
+        });
+
+        function sendContact() {
+            var contact_sel = $("#contact-sel").val();
+            if (contact_sel == 'non-sel' || !$("#tit").val() || !$("#content").val() || !$("#user-nm").val() || !$("#user-tel").val() || !$("#user-email").val() || $("#agree").is(":checked") == false) {
+                if (contact_sel == 'non-sel') {
+                    $(".contact-fr .type-data .alert").text("문의유형을 선택해주세요.");
+                } else {
+                    $(".contact-fr .type-data .alert").text("");
+                }
+                if (!$("#tit").val()) {
+                    $(".contact-fr .tit-data .alert").text("제목을 입력해주세요.");
+                } else {
+                    $(".contact-fr .tit-data .alert").text("");
+                }
+                if (!$("#content").val()) {
+                    $(".contact-fr .content-data .alert").text("내용을 입력해주세요.");
+                } else {
+                    $(".contact-fr .content-data .alert").text("");
+                }
+                if (!$("#user-nm").val()) {
+                    $(".contact-fr .nm-data .alert").text("이름을 입력해주세요.");
+                } else {
+                    $(".contact-fr .nm-data .alert").text("");
+                }
+                if (!$("#user-tel").val()) {
+                    $(".contact-fr .tel-data .alert").text("휴대폰 번호를 입력해주세요.");
+                } else {
+                    $(".contact-fr .tel-data .alert").text("");
+                }
+                if (!$("#user-email").val()) {
+                    $(".contact-fr .email-data .alert").text("이메일을 입력해주세요.");
+                } else {
+                    $(".contact-fr .email-data .alert").text("");
+                }
+                if ($("#agree").is(":checked") == false) {
+                    alert("필수 항목을 체크 해주세요.")
+                }
+            } else {
+                alert("문의가 정상적으로 제출되었습니다.");
+                $("#customer .contact-fr").submit();
+            }
+        }
+    </script>
+</body>
+
+</html>

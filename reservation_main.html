@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="bg"></header>
+        <div id="reservation">
+            <div class="fixed-bar cm-area">
+                <div class="inner-area">
+                    <ul class="tab-menu">
+                        <li data-tab="normal-cal" class="on">일반 예약</li>
+                        <li data-tab="join-cal">조인 예약</li>
+                    </ul>
+                    <!-- end tab-menu -->
+                    <div class="datepicker">
+                        <div class="cm-inner show normal-cal">
+                            <div id="default-calendar" class="calendar"></div>
+                            <div id="tab-active01" class="tab-list">
+                                <ul class="tab-bar depth01">
+                                    <li class="all on"><input type="button" value="전체"></li>
+                                    <li><input type="button" value="18홀"></li>
+                                    <li><input type="button" value="6/12/24홀"></li>
+                                </ul>
+                                <!-- end tab-bar -->
+                            </div>
+                            <!-- end tab-list -->
+                        </div>
+                        <!-- end cm-inner -->
+                        <div class="cm-inner join-cal">
+                            <div id="join-calendar" class="calendar"></div>
+                            <div id="tab-active02" class="tab-list">
+                                <ul class="tab-bar depth01">
+                                    <li class="all on"><input type="button" value="전체"></li>
+                                    <li><input type="button" value="1부"></li>
+                                    <li><input type="button" value="2부"></li>
+                                    <li><input type="button" value="3부"></li>
+                                </ul>
+                                <!-- end tab-bar -->
+                            </div>
+                            <!-- end tab-list -->
+                        </div>
+                        <!-- end cm-inner -->
+                    </div>
+                    <!-- end datepicker -->
+
+                </div>
+                <!-- end inner-wrap -->
+            </div>
+            <!-- end fixed-bar -->
+            <div class="hole-list cm-area">
+                <div class="inner-area">
+                    <h1 class="now-datepick">날짜를 선택하세요.</h1>
+                    <div class="default-hole holeArea">
+                        <div class="hole-type">
+                            <!----------------------->
+                            <h2>18 HOLE</h2>
+                            <div class="list-area">
+                                <div id="myBtn" class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num">4인</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num max-third">3인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num">4인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num max-third">3인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num">4인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                            <p class="max-num">4인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                            </div>
+                            <!-- end list-area  -->
+                        </div>
+                        <!-- end hole-type -->
+                        <div class="hole-type">
+                            <!----------------------->
+                            <h2>6 HOLE</h2>
+                            <div class="list-area">
+                                <div class="li-box deadline">
+                                    <p>예약이 마감되었습니다.</p>
+                                </div>
+                                <!-- end li-box -->
+                            </div>
+                            <!-- end list-area  -->
+                        </div>
+                        <!-- end hole-type -->
+                        <div class="hole-type">
+                            <h2>12 HOLE</h2>
+                            <div class="list-area">
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>12홀</p>
+                                            <p class="max-num">4인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                            </div>
+                            <!-- end list-area  -->
+                        </div>
+                        <!-- end hole-type -->
+                        <div class="hole-type">
+                            <!----------------------->
+                            <h2>24 HOLE</h2>
+                            <div class="list-area">
+                                <div class="li-box" onclick="location.href='reservation_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>24홀</p>
+                                            <p class="max-num">4인</p>
+                                            <p>V 코스</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                </div>
+                                <!-- end li-box -->
+                            </div>
+                            <!-- end list-area  -->
+                        </div>
+                        <!-- end hole-type -->
+                    </div>
+                    <!-- end default-hole -->
+                    <div class="join-hole holeArea">
+                        <!----------------------->
+                        <div class="hole-type">
+                            <h2>18 HOLE : JOIN PLAY</h2>
+                            <div class="list-area">
+                                <div class="li-box" onclick="location.href='reservation_join_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                    <div class="join-envir">
+                                        <div class="per-num">
+                                            <p>참여중</p>
+                                            <ul>
+                                                <li><i class="fas fa-user-alt on"></i></li>
+                                                <li><i class="fas fa-user-alt on"></i></li>
+                                                <li><i class="fas fa-user-alt"></i></li>
+                                                <li><i class="fas fa-user-alt"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- end per-num -->
+                                        <a class="join-btn">참여하기 <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                    <!-- end join-envir -->
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box" onclick="location.href='reservation_join_step01.html'">
+                                    <ul class="le-box">
+                                        <li>09:00</li>
+                                        <li>
+                                            <p>18홀</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="rg-box">
+                                        <li>180,000 <span>원</span></li>
+                                        <li>1인 기준 (그린피 + 카트비)</li>
+                                    </ul>
+                                    <div class="join-envir">
+                                        <div class="per-num">
+                                            <p>참여중</p>
+                                            <ul>
+                                                <li><i class="fas fa-user-alt on"></i></li>
+                                                <li><i class="fas fa-user-alt on"></i></li>
+                                                <li><i class="fas fa-user-alt on"></i></li>
+                                                <li><i class="fas fa-user-alt"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- end per-num -->
+                                        <a class="join-btn">참여하기 <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                    <!-- end join-envir -->
+                                </div>
+                                <!-- end li-box -->
+                                <div class="li-box deadline">
+                                    <p>예약이 마감되었습니다.</p>
+                                </div>
+                                <!-- end li-box -->
+                            </div>
+                            <!-- end list-area  -->
+                        </div>
+                        <!-- end hole-type -->
+                    </div>
+                    <!-- end default-hole -->
+                </div>
+                <!-- end inner-area -->
+            </div>
+            <!-- end hole-list  -->
+        </div>
+        <!-- end reservation -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var reservationMode = getParam("reservationMode");
+        var year01 = getParam("year");
+        var month01 = getParam("month");
+        var hole = "whole";
+        var phase = "whole";
+
+        function getParam(sname) {
+            var params = location.search.substr(location.search.indexOf("?") + 1);
+            var sval = "";
+            params = params.split("&");
+            for (var i = 0; i < params.length; i++) {
+                temp = params[i].split("=");
+                if ([temp[0]] == sname) {
+                    sval = temp[1];
+                }
+            }
+            return sval;
+        }
+
+        $('.tab-menu').click(function() {
+            if ($('.tab-menu').find('.on').html() === '일반 예약') {
+                reservationMode = 'normal';
+            } else {
+                reservationMode = 'join';
+            }
+            console.log(reservationMode);
+        });
+
+        $('.datepicker').click(function() {
+            dateData = $(this).find('.date-body.soldOut.sel-date').attr('date-data');
+            console.log(dateData);
+        });
+
+        $('.tab-bar.depth01').click(function() {
+            if (reservationMode === 'normal') {
+                hole = $(this).find('.on').find('input').attr('value');
+            } else {
+                phase = $(this).find('.on').find('input').attr('value');
+            }
+        });
+
+        $('.tab-bar.depth02').click(function() {
+            phase = $(this).find('.on').find('input').attr('value');
+        });
+
+        // reservationMode, dateData, hole, phase 이용하여 게임정보 불러오기 [ajax];
+    </script>
+    <script>
+        var gameIndex;
+
+        function getInfoOfPossibleGame() {
+            $.ajax({
+                url: 'api/',
+                data: {
+                    'reservationMode': reservationMode,
+                    'dateData': dateData,
+                },
+                dataType: 'back에서 준비된 것',
+                success: function(data) {
+                    gameIndex = data.gameIndex;
+                },
+            });
+        }
+
+        function getNextPage() {
+            location.href = "/reservation_step01?choosedGameIndex=" + gameIndex[choosed];
+        }
+    </script>
+</body>
+
+</html>

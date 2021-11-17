@@ -1,0 +1,147 @@
+/* layout.css */
+
+header {
+    height: 70px;
+    position: relative;
+    z-index: 28;
+}
+
+header.bg {
+    background: #0a141e;
+}
+
+header .inner-wrap {
+    height: 100%;
+}
+
+header .inner-wrap .logo {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 3;
+}
+
+header .gnb-menu {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+header .gnb-menu a {
+    font-family: 'nimbus-sans-extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+header .gnb-menu a.on {
+    color: #de6f00;
+}
+
+header .hp-href {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 0;
+}
+
+header .hp-href a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    width: 117px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+header .hp-href .reservation {
+    background: #de6f00;
+}
+
+header .open-menu {
+    display: none;
+}
+
+
+/* footer */
+
+footer {
+    height: 305px;
+    clear: both;
+}
+
+footer .booking-btn {
+    display: none;
+}
+
+footer .foot-info {
+    font-size: 0;
+}
+
+footer .f-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 164px;
+    margin-left: 45px;
+}
+
+footer .f-logo img {
+    display: block;
+}
+
+footer .f-logo .m-foot-logo {
+    display: none;
+}
+
+footer .f-content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 209px);
+    padding: 35px 0 0 54px;
+}
+
+footer .f-content .foot-menu {
+    padding-bottom: 30px;
+}
+
+footer .f-content .foot-menu a {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    margin-right: 54px;
+}
+
+footer .f-content .site-related p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    line-height: 1.78;
+}
+
+footer .f-content .site-related ul li {
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    line-height: 1.78;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .f-content .site-related ul li::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    height: 16px;
+    margin: 0 7px;
+}
+
+footer .f-content .site-related ul li:last-child:after {
+    border-right: none;
+}

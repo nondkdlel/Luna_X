@@ -1,0 +1,124 @@
+/* calendar.css */
+
+
+/* .calendar-area {} */
+
+.calendar {
+    display: none;
+}
+
+.datepicker .calendar {
+    display: block;
+}
+
+.calendar.on {
+    display: block;
+}
+
+.calendar .cal-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.calendar .cal-head .year-month {
+    font-family: 'nimbus-sans-extended', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    width: 36%;
+}
+
+.calendar .cal-head button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.calendar .cal-head button i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.calendar .cal-body .thead {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar .cal-body .thead .day {
+    font-family: 'nimbus-sans-extended', sans-serif;
+    display: inline-block;
+    width: calc(100% /7);
+    font-size: 14px;
+    color: #fff;
+}
+
+.calendar .cal-body .thead .day:first-child {
+    color: #f77d7d;
+}
+
+.calendar .cal-body .thead .day:last-child {
+    color: #546efd;
+}
+
+.calendar .cal-body .week {
+    font-size: 0;
+}
+
+.calendar .cal-body .date-body {
+    display: inline-block;
+    width: calc(100% /7);
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.calendar .cal-body .date-body .date {
+    font-family: 'nimbus-sans-extended', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.calendar .cal-body .date-body:nth-child(1) .date {
+    color: #f77d7d;
+}
+
+.calendar .cal-body .date-body:nth-child(7) .date {
+    color: #546efd;
+}
+
+.calendar .cal-body .date-body .remnant {
+    font-size: 18px;
+    color: #de6f00;
+}
+
+.calendar .cal-body .date-body.soldOut .date {
+    color: rgba(255, 255, 255, .2);
+}
+
+.calendar .cal-body .date-body.soldOut .remnant {
+    color: rgba(255, 255, 255, .2);
+}
+
+.calendar .cal-body .date-body.sel-date {
+    background: #de6f00;
+    border-radius: 4px;
+}
+
+.calendar .cal-body .date-body.sel-date .remnant {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1199px) {
+    .calendar .cal-head .year-month {
+        width: 40%;
+    }
+    .calendar .cal-body .date-body .date {
+        font-size: 14px;
+    }
+    .calendar .cal-body .date-body .remnant {
+        font-size: 15px;
+    }
+}

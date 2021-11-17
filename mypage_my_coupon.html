@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div id="mypage" class="wrap-sub">
+            <div class="container font-0">
+                <aside>
+                    <h1>MY</h1>
+                    <ul class="menu-bar">
+                        <li><a href="mypage_reservation_status.html">예약 현황</a></li>
+                        <li><a href="mypage_payment_history.html">결제 내역</a></li>
+                        <li class="on"><a href="mypage_my_coupon.html">마이 쿠폰</a></li>
+                        <li><a href="#">회원 정보 관리</a></li>
+                    </ul>
+                    <!-- end menu-bar -->
+                </aside>
+                <div class="content cm-table pay-history">
+                    <div class="pg-head">
+                        <h1 class="pg-tit">마이쿠폰</h1>
+                        <p>* 최근 6개월까지 내역만 보관</p>
+                    </div>
+                    <!-- end pg-head -->
+                    <div class="scroll-tb">
+                        <table>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>쿠폰명</th>
+                                    <th>유효기간</th>
+                                    <th>할인 금액</th>
+                                    <th>시용</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="empty-tr">
+                                    <td colspan="4">사용가능한 쿠폰이 없습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>고객 감사 할인 쿠폰</td>
+                                    <td>~00.00.00</td>
+                                    <td>10,000원 할인</td>
+                                    <td>사용가능</td>
+                                </tr>
+                                <tr class="impossible">
+                                    <td>선결제 감사 할인 쿠폰</td>
+                                    <td>~00.00.00</td>
+                                    <td>10,000원 할인</td>
+                                    <td>21년 8월 31일 사용</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end scroll-tb -->
+                    <div class="pg-move-num">
+                        <ul>
+                            <li class="arrow">
+                                <a href="#">
+                                    <</a>
+                            </li>
+                            <li class="num on"><a href="#">1</a></li>
+                            <li class="arrow"><a href="#">></a></li>
+                        </ul>
+                    </div>
+                    <!-- end pg-move-num -->
+                </div>
+                <!-- end content -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end mypage -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var coupon;
+
+        function getCoupon() {
+            $.ajax({
+                url: 'back-end',
+                data: {
+                    'user': '유저 고유정보',
+                },
+                dataType: 'back-end 지정',
+                success: function(data) {
+                    coupon = data.coupon;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="bg"></header>
+        <div id="reservation">
+            <div class="common-fr step-02">
+                <div class="step-tit">
+                    <p>(1/3)</p>
+                    <h1>RESERVATION</h1>
+                </div>
+                <div class="product-conf">
+                    <ul class="date">
+                        <li class="thead">일시</li>
+                        <li class="tbody">2021.10.07 (목) 09:30</li>
+                    </ul>
+                    <ul class="item-nm">
+                        <li class="thead">상품명</li>
+                        <li class="tbody">
+                            <p>18홀</p>
+                            <p>4인 조인</p>
+                            <p>V-A-B</p>
+                        </li>
+                    </ul>
+                    <ul class="prod-pr">
+                        <li class="thead">총 금액</li>
+                        <li class="tbody">600,000</li>
+                    </ul>
+                    <div class="refer-info">
+                        <p>* 그린피와 카트비가 포함된 금액입니다.</p>
+                        <p>* 샤워&락카 이용료는 별도, 현장 결제(키오스크) 입니다.</p>
+                    </div>
+                    <!-- end refer-info -->
+                </div>
+                <!-- end product-conf -->
+                <div class="pay-type">
+                    <p class="sec-tit">결제 방식</p>
+                    <div class="pay-result">
+                        <div class="pm-sel">
+                            <div class="tp-box all-pay">
+                                <p>1명</p>
+                                <span>전액 결제</span>
+                            </div>
+                            <div class="tp-box quarter-pay">
+                                <p class="threeOrFour">4명</p>
+                                <span>나눠 결제</span>
+                            </div>
+                        </div>
+                        <!-- end pm-sel -->
+                        <ul class="total-pr">
+                            <li>1인 당 결제금액</li>
+                            <li class="pr-num">600,000 <span>원</span></li>
+                        </ul>
+                        <!-- end total-pr -->
+                    </div>
+                    <!-- end pay-result -->
+                </div>
+                <!-- end pay-type -->
+                <div class="btn-area">
+                    <a class="next-btn" onclick="payType();">다음으로</a>
+                </div>
+                <!-- end btn-group -->
+            </div>
+            <!-- end step-02 -->
+            <div class=" popBg ">
+                <div class="popup warning ">
+                    <div class="popContent ">
+                        <img src="img/warning_icon.png " alt=" ">
+                        <h1>내용 확인 후 체크박스를 눌러주세요.</h1>
+                        <p>즐거운 라운딩을 위해 중요한 내용을<br>안내드립니다. 꼭 확인해주세요.</p>
+                    </div>
+                    <!-- end popContent -->
+                    <div class="popFoot ">
+                        <input type="button " value="확 인 ">
+                    </div>
+                    <!-- end popFoot-->
+                </div>
+                <!-- end popup -->
+            </div>
+            <!-- end popBg -->
+        </div>
+        <!-- end reservation -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="js/main.js "></script>
+    <script>
+        function payType() {
+            if ($("#reservation .step-02 .pay-result .pm-sel .all-pay").hasClass("on")) {
+                window.location.href = "reservation_step03.html";
+            }
+            if ($("#reservation .step-02 .pay-result .pm-sel .quarter-pay").hasClass("on")) {
+                window.location.href = "reservation_quarter_step03.html";
+            }
+        }
+    </script>
+</body>
+
+</html>

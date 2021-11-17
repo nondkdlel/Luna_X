@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="bg"></header>
+        <div id="payment">
+            <div class="head">
+                <p>(3/3)</p>
+                <h1>PAYMENT</h1>
+            </div>
+            <!-- end head -->
+            <div class="pay-info">
+                <ul class="booker">
+                    <li class="thead">예약자</li>
+                    <li class="t-data">홍길동</li>
+                </ul>
+                <!-- end booker -->
+                <ul class="date">
+                    <li class="thead">일시</li>
+                    <li class="t-data" id="payment_date">2021.10.07 (목) 09:30</li>
+                </ul>
+                <!-- end pduct-nm -->
+                <ul class="pduct-nm">
+                    <li class="thead">상품명</li>
+                    <li class="t-data">
+                        <p class="payment_course">18홀</p>
+                        <p class="payment_people">4인 플레이</p>
+                        <p class="payment_etc">V-A-B</p>
+                    </li>
+                </ul>
+                <!-- end pduct-nm -->
+                <ul class="pay-method">
+                    <li class="thead">결제 방식</li>
+                    <li class="t-data" id="payment_people"></li>
+                </ul>
+                <!-- end pay-method -->
+                <ul class="per-pay">
+                    <li class="thead">1인 결제 금액</li>
+                    <li class="t-data">600,000 원</li>
+                </ul>
+                <!-- end per-pay -->
+                <ul class="total-pay">
+                    <li class="thead">총 금액</li>
+                    <li class="t-data">600,000 원</li>
+                </ul>
+                <!-- end per-pay -->
+            </div>
+            <!-- end pay-info -->
+            <div class="pay-inp">
+                <h2>결제 정보 입력</h2>
+                <div class="tab-menu">
+                    <input type="radio" name="inp-type" id="direct-inp" checked><label data-tab="type-01" for="direct-inp">카드번호 직접 입력</label>
+                    <input type="radio" name="inp-type" id="easy-pay"><label data-tab="type-02" for="easy-pay">사용한 카드로 간편 결제</label>
+                </div>
+                <!-- end tab-menu -->
+                <div class="pay-form">
+                    <div class="cm-inner show type-01">
+                        <div class="fr-split">
+                            <p class="fr-tit">신용(체크)카드 번호</p>
+                            <div class="fr-content card-num">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                            </div>
+                            <!-- end fr-content -->
+                        </div>
+                        <!-- end fr-split -->
+                        <div class="flex-box">
+                            <div class="fr-split">
+                                <p class="fr-tit">유효기간</p>
+                                <div class="fr-content">
+                                    <input type="text" name="" id="" maxlength="4" placeholder="MM/YY">
+                                </div>
+                                <!-- end fr-content -->
+                            </div>
+                            <!-- end fr-split -->
+                            <div class="fr-split">
+                                <p class="fr-tit">카드 비밀번호</p>
+                                <div class="fr-content">
+                                    <input type="text" name="" id="" maxlength="2" placeholder="앞 2자리">
+                                </div>
+                                <!-- end fr-content -->
+                            </div>
+                            <!-- end fr-split -->
+                        </div>
+                        <!-- end flex-box -->
+                        <div class="fr-split">
+                            <p class="fr-tit">생년월일 8자리 <span>* 법인카드는 사업자등록번호 10자리</span></p>
+                            <div class="fr-content birth-inp">
+                                <input type="text" name="" id="" maxlength="2" placeholder="e.g. 19840101">
+                                <input type="checkbox" name="remember" id="remember"><label for="remember">이 카드 기억하기</label>
+                            </div>
+                            <!-- end fr-content -->
+                        </div>
+                        <!-- end fr-split -->
+                    </div>
+                    <!-- end cm-inner -->
+                    <div class="cm-inner type-02">
+                        <div class="fr-split">
+                            <p class="fr-tit">신용(체크)카드 번호</p>
+                            <div class="fr-content card-num">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                                <input type="text" name="" id="" maxlength="4" placeholder="0000">
+                            </div>
+                            <!-- end fr-content -->
+                        </div>
+                        <!-- end fr-split -->
+                    </div>
+                    <!-- end cm-inner -->
+                </div>
+                <!-- end pay-form -->
+            </div>
+            <!-- end pay-inp -->
+            <div class="pay-noti">
+                <p>결제 예약시 유의사항</p>
+                <ul>
+                    <li>- 바로 결제되지 않으며 마감시까지 결제자가 모두 결제 예약을 완료했을 시에만 결제가 진행됩니다.</li>
+                    <li>- 결제 진행일에 결제자 귀책사유(한도초과, 이용정지 등)로 인하여 결제가 실패할 수 있으니, 결제수단이 유효한지 한 번 확인 바랍니다.</li>
+                </ul>
+            </div>
+            <!-- end pay-noti -->
+            <div class="coupon-sale">
+                <p class="tit">쿠폰 할인 <span>* 중복 적용 불가</span></p>
+                <div class="selectBox">
+                    <select name="" id="">
+                        <option value="">쿠폰을 선택해주세요.</option>
+                        <option value="">루나엑스 신규 회원가입 할인 쿠폰(-2000)</option>
+                    </select>
+                </div>
+                <!-- end selectBox -->
+            </div>
+            <!-- end coupon-sale -->
+            <div class="tos-noti">
+                <p class="tit">이용약관</p>
+                <div class="chk-bar">
+                    <input type="checkbox" name="tos-ess-01" id="tos-ess-01"><label for="tos-ess-01">[필수] 제 3자에 대한 개인정보 제공 동의</label>
+                    <input type="button" value="보기" onclick="window.open('service_tos.html')">
+                </div>
+                <!-- end chk-bar -->
+                <div class="chk-bar">
+                    <input type="checkbox" name="tos-ess-02" id="tos-ess-02"><label for="tos-ess-02">[필수] 책임 규정에 대한 동의</label>
+                    <input type="button" value="보기" onclick="window.open('service_tos.html')">
+                </div>
+                <!-- end chk-bar -->
+            </div>
+            <!-- end tos-noti -->
+            <ul class="total-amount">
+                <li>최종 결제 금액</li>
+                <li class="price">150,000 <span>원</span></li>
+            </ul>
+            <input class="pay-btn width-100" type="button" value="결제하기" onclick="canGoNext()">
+            <!-- 결제하기 이후 작업 미완성-->
+        </div>
+        <!-- end payment -->
+        <footer class="hide"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/og_image.jpg">
+    <meta property="og:description" content="루나엑스가 새로운 골프 문화를 만들어갑니다.">
+    <title>LUNA-X</title>
+    <meta name="description" content="기존에 없던 골프 혁신 패러다임, 새로운 골프 문화를 만들어갑니다.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lfu2ifd.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- //////////////////// popup /////////////////// -->
+        <div id="event_pop">
+            <div class="inner-wrap">
+                <div class="popContent">
+                    <div class="update-img">
+                        <img src="img/main_popup.jpg" alt="">
+                    </div>
+                    <div class="btn-area">
+                        <div class="today-close">
+                            <input type="checkbox" name="todayNone" id="todayNone"><label for="todayNone"><span>오늘하루 이 창 열지 않음</span></label>
+                        </div>
+                        <div class="btn-hide">
+                            <img src="img/hide_btn.png" alt="">
+                            <button>닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end event_pop -->
+        <!-- /////////////////// end popup //////////////////// -->
+        <div class="main-visual bg-img">
+            <header class="bg"></header>
+            <!--------------------- top banner --------------------->
+            <div id="top-banner">
+                <div class="container">
+                    <div class="noti-area">
+                        <div class="tit">
+                            <img src="img/checkList_icon.png" alt="">
+                            <p>안내</p>
+                        </div>
+                        <h1>마이크로소프트사의 인터넷익스플로러 지원이 종료되었습니다.</h1>
+                    </div>
+                    <!-- end noti-area -->
+                    <div class="download">
+                        <a href="https://www.google.co.kr/chrome/?brand=CHBD&gclsrc=aw.ds&gclid=EAIaIQobChMIuontw7KP9AIVw52GCh3kFgOMEAAYASAAEgLbH_D_BwE">크롬 다운 받기</a>
+                        <a href="https://www.microsoft.com/ko-kr/edge">엣지 다운 받기</a>
+                    </div>
+                    <!-- end download -->
+                    <div class="hide-btn">
+                        <input id="check" type="button" value="오늘 하루 보지 않기" onclick="closeBanner();">
+                        <button>X</button>
+                    </div>
+                    <!-- end hide-btn -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!--------------------- end top-banner --------------------->
+            <div class="container">
+                <!-- 21/10/21 noti txt add -->
+                <div class="visual-txt">
+                    <h1>THE NEW GOLF<br>EXPERIENCE<br>INNOVATION</h1>
+                    <p>루나엑스가 새로운 골프 문화를 만들어 갑니다.</p>
+                    <p> 끊임없이 붙잡아두는 관습과 고정관념에 도전합니다.</p>
+                    <p> 그렇게 우리는 세상에 없던 가치를 만듭니다.</p>
+                </div>
+                <!-- end visual-txt -->
+                <div class="reservation-zone">
+                    <ul class="tab-menu">
+                        <li data-tab="normal-cal" class="on">일반 예약</li>
+                        <li data-tab="join-cal">조인 예약</li>
+                    </ul>
+                    <!-- end tab-menu -->
+                    <div class="calendar-area">
+                        <div id="default-calendar" class="calendar normal-cal on"></div>
+                        <div id="join-calendar" class="calendar join-cal"></div>
+                    </div>
+                    <!-- end calendar-area -->
+                    <input type="submit" value="예약하기" id="calendar-submit">
+                </div>
+                <!-- end reservation-zone -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end main-visual -->
+        <div id="main">
+            <section class="content-01">
+                <div class="container font-0">
+                    <div class="sec-tit cm-effect">
+                        <h1>기존에 없던 골프 혁신 패러다임,<br>루나엑스가 새로운 골프 문화를 만들어갑니다.</h1>
+                        <a class="link-btn" href="about.html">See more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- end sec-tit -->
+                    <div class="ab-chart cm-effect">
+                        <ul>
+                            <li>
+                                <span>1</span> NO-CADDIE</li>
+                            <li>노캐디, 셀프 라운드</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>2</span> NO-CASH</li>
+                            <li>온라인 간편 선결제 *1/n가능</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>3</span> REASONABLE</li>
+                            <li>다양한 요금 체계</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>4</span> FLEXIBLE PLAY</li>
+                            <li>6/12/18/24홀 운영</li>
+                        </ul>
+                    </div>
+                    <!-- end ab-chart -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section class="content-02 bg-img">
+                <div class="container">
+                    <div class="guide-box">
+                        <div class="tit-area">
+                            <h1>COURSE</h1>
+                            <p>골퍼들을 위한 최적의 코스를 제공합니다.</p>
+                            <a class="link-btn" href="course.html">See more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <!-- end tit-area -->
+                        <div class="brief-info">
+                            <ul>
+                                <li>6Hole 4Way</li>
+                                <li>24Hole</li>
+                            </ul>
+                            <ul>
+                                <li>총 면적</li>
+                                <li>1,816,593㎥ <span>약 55만평</span></li>
+                            </ul>
+                            <ul>
+                                <li>코스 길이</li>
+                                <li>9,764yd (8,929m)</li>
+                            </ul>
+                        </div>
+                        <!-- end brief-info -->
+                    </div>
+                    <!-- end guide-box -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section class="content-03 common-layout">
+                <div class="container font-0">
+                    <h1>EASY, FUN, <br>SPEEDY</h1>
+                    <div class="sub-txt">
+                        <p>세상은 변화하고 있습니다. 모두가 편하게 즐길 수 있는 스마트 골프장을 만들기 위해 루나엑스가 먼저 시작합니다.<br>키오스크를 통한 체크인 시스템, 무인 샤워실과 락카까지 루나엑스가 만들어가는 새로운 스마트 골프 세상을 경험하세요.</p>
+                        <a class="link-btn" href="space.html">See more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- end space-txt -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section class="content-04">
+                <div class="card-split">
+                    <div class="full-card">
+                        <img class="card-img" src="img/main_card_clubhouse.jpg" alt="">
+                        <div class="card-nm">
+                            <h1>CLUB HOUSE</h1>
+                            <a class="link-btn" href="space_clubhouse.html">See more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- end full-card -->
+                    <div class="half-card">
+                        <div class="split-box">
+                            <img class="card-img" src="img/main_card_restaurant.jpg" alt="">
+                            <div class="card-nm">
+                                <h1>RESTAURANT</h1>
+                                <a class="link-btn" href="space_clubhouse.html#eating">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- end split-box -->
+                        <div class="split-box">
+                            <img class="card-img" src="img/main_card_shower_room.jpg" alt="">
+                            <div class="card-nm">
+                                <h1>POWDER ROOM</h1>
+                                <a class="link-btn" href="space_clubhouse.html#shower">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- end split-box -->
+                    </div>
+                    <!-- end half-card -->
+                </div>
+                <!-- end card-split -->
+                <div class="card-split">
+                    <div class="half-card">
+                        <div class="split-box">
+                            <img class="card-img" src="img/main_card_proshop.jpg" alt="">
+                            <div class="card-nm">
+                                <h1>PRO SHOP</h1>
+                                <a class="link-btn" href="space_playx.html#facility">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- end split-box -->
+                        <div class="split-box">
+                            <img class="card-img" src="img/main_card_pub.jpg" alt="">
+                            <div class="card-nm">
+                                <h1>PUB</h1>
+                                <a class="link-btn" href="space_playx.html#facility">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- end split-box -->
+                    </div>
+                    <!-- end half-card -->
+                    <div class="full-card">
+                        <img class="card-img" src="img/main_card_driving_range.jpg" alt="">
+                        <div class="card-nm">
+                            <h1>DRIVING RANGE : PLAY X</h1>
+                            <a class="link-btn" href="space_playx.html">See more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- end full-card -->
+                </div>
+                <!-- end card-split -->
+            </section>
+            <section class="content-05 common-layout">
+                <div class="container font-0">
+                    <h1>MANIFESTO</h1>
+                    <div class="sub-txt">
+                        <p>관습과 정체를 거부합니다. 변화를 두려워하지 않습니다. 담대한 마음으로 열린 가능성의 항해를 멈추지 않겠습니다.</p>
+                        <p>골프를 즐겁게하고, 골퍼들에게 인정받는 최고의 골프장이 되기 위해 세상에 없던 새로운 가치를 만들어 갑니다. </p>
+                        <a class="link-btn" href="about.html">See more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- end space-txt -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section class="content-06">
+                <div class="container">
+                    <div class="useing-txt">
+                        <h1>루나엑스 사용법</h1>
+                        <p>즐거운 라운드를 위한 이용방법을 안내 드립니다.</p>
+                        <a class="link-btn" href="guide_use.html">See more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- end useing-txt -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section class="content-07">
+                <div class="container">
+                    <h1>EVENT & NEWS</h1>
+                    <div class="inner-content">
+                        <div class="article" onclick="location.href='board_event.html'">
+                            <img class="thum-img" src="img/main_article_event.png" alt="">
+                            <p class="cate">EVENT</p>
+                            <div class="thum-txt">
+                                <h2>루나엑스 2022년 장타대회</h2>
+                                <a class="link-btn" href="#">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="article" onclick="location.href='board_notice.html'">
+                            <img class="thum-img" src="img/main_article_notice.png" alt="">
+                            <p class="cate">NOTICE</p>
+                            <div class="thum-txt">
+                                <h2>야간 라운드 공지</h2>
+                                <a class="link-btn" href="#">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="article" onclick="location.href='board_news.html'">
+                            <img class="thum-img" src="img/main_article_news.png" alt="">
+                            <p class="cate">NEWS LETTER</p>
+                            <div class="thum-txt">
+                                <h2>루나엑스 10월 뉴스레터</h2>
+                                <a class="link-btn" href="#">See more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-08">
+                <img src="img/main_section_bg_03.jpg" alt="">
+            </section>
+        </div>
+        <!-- end main -->
+        <footer class="scrollBtn"></footer>
+    </div>
+    <!-- end wrap -->
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var getCookie = function(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        // 24시간 기준 쿠키 설정하기  
+        var setCookie = function(cname, cvalue, exdays) {
+            var todayDate = new Date();
+            todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + todayDate.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        var couponClose = function() {
+            if ($("#event_pop .today-close input[type='checkbox']").is(":checked") == true) {
+                setCookie("close", "Y", 1);
+            }
+            $("#event_pop").hide();
+        }
+
+        $(document).ready(function() {
+            cookiedata = document.cookie;
+            console.log(cookiedata);
+            if (cookiedata.indexOf("close=Y") < 0) {
+                $("#event_pop").show();
+            } else {
+                $("#event_pop").hide();
+            }
+            $("#event_pop .btn-hide").click(function() {
+                couponClose();
+            });
+        });
+
+        function todayCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + value + "; path=/; expires=" + todayDate.toUTCString() + ";"
+        }
+        if (document.cookie.indexOf("popToday=close") < 0) {
+            document.getElementById("top-banner").style.display = "block";
+        } else {
+            document.getElementById("top-banner").style.display = "none";
+        }
+
+        function closeBanner() {
+            todayCookie("popToday", "close", 1);
+            $("#top-banner").hide();
+
+        }
+    </script>
+    <script>
+        $('#calendar-submit').click(function() {
+            if ($(this).hasClass("on")) {
+                if ($('.tab-menu').find('.on').html() === '일반 예약') {
+                    reservationMode = 'normal';
+                } else {
+                    reservationMode = 'join';
+                }
+                strArray01 = $('.year-month').html();
+                var splited = strArray01.split('.');
+                year01 = splited[0];
+                month01 = splited[1];
+                day01 = $('.sel-date').find('.date').html();
+                location.href = '/reservation_main?reservationMode=' + reservationMode + '&year=' + year01 + '&month=' + month01 + '&day=' + day01;
+            }
+        });
+    </script>
+</body>
+
+</html>
