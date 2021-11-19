@@ -2,8 +2,8 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 
 window.onload = function() {
 
-    $("header").load("/common/header.html");
-    $("footer").load("/common/footer.html");
+    $("header").load("common/header.html");
+    $("footer").load("common/footer.html");
 
 
 
