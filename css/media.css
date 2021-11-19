@@ -1287,13 +1287,6 @@
         font-size: 14px;
     }
     /* reservation_step01 */
-    #reservation .common-fr {
-        width: 100%;
-        border-radius: 0;
-        background: #0a141e;
-        margin: 60px auto 100px auto;
-        padding: 0 15px;
-    }
     #reservation .common-fr .step-tit p {
         font-size: 14px;
         padding-bottom: 6px;
@@ -2335,6 +2328,12 @@
 }
 
 @media only screen and (max-width: 450px) {
+    #reservation .common-fr {
+        border-radius: 0;
+        margin: 60px auto 100px auto;
+        background: #0a141e;
+        padding: 0 15px;
+    }
     /* event_popup */
     #event_pop .inner-wrap {
         width: 90%;

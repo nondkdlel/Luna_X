@@ -1707,7 +1707,8 @@
 /* reservation_step01 */
 
 #reservation .common-fr {
-    width: 452px;
+    max-width: 452px;
+    width: 100%;
     border-radius: 10px;
     background: #0d1823;
     margin: 66px auto 200px auto;
@@ -2218,16 +2219,130 @@
 #reservation .other-pg .head {
     font-size: 24px;
     color: #fff;
+    margin-bottom: 28px;
 }
 
 #reservation .other-pg .product-conf {
     background: #14202c;
+    padding: 14px 20px 27px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 28px;
+}
+
+#reservation .other-pg .product-conf ul {
+    font-size: 0;
+    margin-bottom: 18px;
+}
+
+#reservation .other-pg .product-conf ul:last-child {
+    margin-bottom: 0;
 }
 
 #reservation .other-pg .product-conf ul li {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
+}
+
+#reservation .other-pg .product-conf .thead {
+    color: rgba(255, 255, 255, .5);
+    width: 30%;
+}
+
+#reservation .other-pg .product-conf .tbody {
+    color: #fff;
+    width: 70%;
+}
+
+#reservation .other-pg .product-conf .tbody p {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f07800;
+    font-size: 16px;
+}
+
+#reservation .other-pg .product-conf .tbody p::after {
+    content: "";
+    width: 1px;
+    height: 16px;
+    border-right: 1px solid #f07800;
+    margin: 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#reservation .other-pg .product-conf .tbody p:last-child:after {
+    display: none;
+}
+
+#reservation .other-pg .payment-pr .sec-tit {
+    font-weight: 500;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+#reservation .other-pg .payment-pr .pr-result {
+    background: #14202c;
+    padding: 17px 20px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 20px;
+}
+
+#reservation .other-pg .pr-result .subject {
+    border-bottom: 1px solid rgba(239, 239, 239, .1);
+}
+
+#reservation .other-pg .pr-result .subject .subj-item {
+    font-size: 0;
+    margin-bottom: 15px;
+}
+
+#reservation .other-pg .pr-result .subject .subj-item p,
+#reservation .other-pg .pr-result .subject .subj-item span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+#reservation .other-pg .pr-result .subject .subj-item p {
+    width: 30%;
+    color: rgba(255, 255, 255, .5);
+}
+
+#reservation .other-pg .pr-result .subject .subj-item span {
+    width: 70%;
+    color: #fff;
+}
+
+#reservation .other-pg .pr-result .total-pr {
+    font-size: 0;
+    padding: 17px 0;
+}
+
+#reservation .other-pg .pr-result .total-pr li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#reservation .other-pg .pr-result .total-pr li:first-child {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+    width: 30%;
+}
+
+#reservation .other-pg .pr-result .total-pr li:last-child {
+    width: 70%;
+    text-align: right;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#reservation .other-pg .pr-result .total-pr .pr-num span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
 }
 
 
